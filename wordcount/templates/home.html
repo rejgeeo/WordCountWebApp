@@ -1,0 +1,9 @@
+<h1>This is HTML text</h1>
+<h2>App written by {{ myname }}</h2>
+
+<form action = "{% url 'CountWords' %}">
+    <input type="submit" value = "Count Words" />
+</form>
+<form action = "{% url 'CountChars' %}">
+    <input type="submit" value="Count Chars"/>
+</form>

@@ -1,0 +1,15 @@
+<h1>
+    Results are:
+</h1>
+
+<a href="{% url 'Home' %}">
+    <input type="button" value="Home Page" />
+</a>
+<br/>
+<br/>
+<br/>
+<li>unique words = {{ uniquewords }}</li>
+<li>words = {{ words }}</li>
+<li>characters = {{ characters }}</li>
+<br/>
+{{ worddict }}

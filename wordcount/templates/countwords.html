@@ -1,0 +1,20 @@
+<h1>This is HTML text</h1>
+<h2>Word count app</h2>
+<h3>App written by {{ myname }}</h3>
+
+<a href = "{% url 'About' %}">About</a>
+<br/>
+<br/>
+
+<form action = "{% url 'Count' %}">
+    <textarea cols = "100" rows="10" name = "fulltext" ></textarea>
+    <br/>
+    <br/>
+    <input type="submit" value = "Count" />
+</form>
+
+<br/>
+<br/>
+<a href="{% url 'Home' %}">
+   <input type="button" value="Home Page" />
+</a>
